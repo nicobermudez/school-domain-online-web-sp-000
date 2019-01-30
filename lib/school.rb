@@ -19,6 +19,6 @@ class School
   end
 
   def sort
-    roster.each {|key, values| roster[key]= values.sort}
+    roster.collect {|key, values| roster[key]= values.sort}
   end
 end
